@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Akhir Edutech | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">Valerie<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <h3 class="greeting">Hi, I'm</h3>
+            <h1 class="name">Valerie Alana Yusri</h1>
+            <h2 class="role">Undergraduate Informatics Eng Student</h2>
+            <p class="desc">Interested in Backend Development, Software Engineering, and Artificial Intelligence.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    View Projects <i class="fa-solid fa-arrow-right arrow"></i>
+                </a>
+                <a href="https://github.com/valeriealanaa" target="_blank" class="btn btn-outline">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+                Saya adalah mahasiswi Informatika di Universitas Lampung yang tertarik pada bidang kecerdasan buatan dan teknologi. Aktif mengembangkan kemampuan pemrograman melalui project akademik, course online, dan pengalaman kolaborasi tim untuk meningkatkan hard skill maupun soft skill.
+            
+            <div class="skills-container">
+                <span class="skill-badge"><i class="fa-brands fa-php"></i> PHP</span>
+                <span class="skill-badge"><i class="fa-brands fa-laravel"></i> Laravel</span>
+                <span class="skill-badge"><i class="fa-solid fa-database"></i> MySQL</span>
+                <span class="skill-badge">C++</span>
+                <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-badge"><i class="fa-brands fa-html5"></i> HTML/CSS</span>
+                <span class="skill-badge"><i class="fa-brands fa-square-js"></i> Javascript</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="filter-container">
+    <button class="btn-filter" onclick="filterProyek('semua')">ALL</button>
+    <button class="btn-filter" onclick="filterProyek('academic')">Academic</button>
+    <button class="btn-filter" onclick="filterProyek('individual')">Individual</button>
+    <button class="btn-filter" onclick="filterProyek('course')">Course</button>
+</div>
+            <div class="grid">
+                
+                <div class="card project-card academic">
+                     <div class="card-image">
+    <img src="klikbus.png" alt="AYCE Project">
+</div>
+                    <div class="card-content">
+                        <span class="category">Academic Project</span>
+                        <h3 class="card-title">KlikBus - Sistem Pemesanan Tiket Bus Antar Kota/Kabupaten</h3>
+                        <p class="card-desc">Berkontribusi dalam pengembangan backend sistem reservasi tiket bus. Berfokus pada perancangan database dan otomatisasi logika refund menggunakan MySQL dan Laravel.</p>
+                        <div class="tech-stack">
+                            <span>Laravel</span><span>MySQL</span>
+                        </div>
+                        <div class="button-group">
+    <a href="https://github.com/Rahmanhidayat16/klikbus.git" class="btn btn-outline btn-small">
+        <i class="fa-brands fa-github"></i> View Source
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1500vhuRFYKXOpSnNA5VioJfQfErO5drs?usp=drive_link" target="_blank" class="btn btn-outline btn-small">
+        <i class="fa-brands fa-google-drive"></i> Project Preview
+    </a>
+</div>
+                    </div>
+                </div>
+
+                <div class="card project-card academic">
+                     <div class="card-image">
+    <img src="khs.png" alt="AYCE Project">
+</div>
+                    <div class="card-content">
+                        <span class="category">Academic Project</span>
+                        <h3 class="card-title">Sistem Pengolahan Kartu Hasil Studi (KHS) </h3>
+                        <p class="card-desc">Berkontribusi pada pengembangan program Kartu Hasil Studi (KHS) berbasis C++ dengan implementasi logika perhitungan nilai dan IP semester mahasiswa.</p>
+                        <div class="tech-stack">
+                            <span>C++</span><span>Logic & Struct</span>
+                        </div>
+                        <div class="button-group">
+    <a href="https://github.com/valeriealanaa/Sistem-Pengolahan-Kartu-Hasil-Studi-KHS.git" class="btn btn-outline btn-small">
+        <i class="fa-brands fa-github"></i> View Source
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1vgwysdoqudRz3yOzooO9QIVRdWb-Z3oQ?usp=drive_link" target="_blank" class="btn btn-outline btn-small">
+        <i class="fa-brands fa-google-drive"></i> Project Preview
+    </a>
+</div>
+                    </div>
+                </div>
+
+                <div class="card project-card academic">
+                    <div class="card-image">
+    <img src="bookdish.png" alt="AYCE Project">
+</div>
+                    <div class="card-content">
+                        <span class="category">Academic Project</span>
+                        <h3 class="card-title">SKPL-Rancang Aplikasi Sistem Reservasi Meja & Pemesanan Makanan di Restoran AYCE</h3>
+                        <p class="card-desc">Berkontribusi dalam pengembangan sistem informasi restoran AYCE berbasis aplikasi digital melalui proses analisis kebutuhan, perancangan alur sistem, pembuatan diagram UML, dan pengembangan antarmuka aplikasi bersama tim. Project ini berhasil meraih posisi 3 besar presentasi terbaik.</p>
+                        <div class="tech-stack">
+                            <span>Software Engineering</span><span>UI/UX</span><span>UML</span>
+                        </div>
+                        <div class="button-group">
+
+    <a href="https://drive.google.com/drive/folders/18M1mSbotJLEwM1SUXfkZkXNclMTrymu6?usp=drive_link" target="_blank" class="btn btn-outline btn-small">
+        <i class="fa-brands fa-google-drive"></i> Project Preview
+    </a>
+</div>
+                    </div>
+                </div>
+
+                <div class="card project-card individual">
+                     <div class="card-image">
+    <img src="kalkulator.png" alt="AYCE Project">
+</div>
+                    <div class="card-content">
+                        <span class="category">Individual Project</span>
+                        <h3 class="card-title">Simple Calculator</h3>
+                        <p class="card-desc">Mengembangkan aplikasi kalkulator sederhana berbasis GUI menggunakan Python dan Tkinter untuk melakukan operasi perhitungan dasar dengan antarmuka interaktif.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>Algorithms</span>
+                        </div>
+                        <div class="button-group">
+    <a href="https://github.com/valeriealanaa/Simple-GUI-Calculator-python.git" class="btn btn-outline btn-small">
+        <i class="fa-brands fa-github"></i> View Source
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1nssNUyRJpyPaaewaZSiLSY_2IBz2JoAk?usp=drive_link" target="_blank" class="btn btn-outline btn-small">
+        <i class="fa-brands fa-google-drive"></i> Project Preview
+    </a>
+</div>
+                    </div>
+                </div>
+                <div class="card project-card course">
+                     <div class="card-image">
+    <img src="revou.png" alt="AYCE Project">
+</div>
+                    <div class="card-content">
+                        <span class="category">RevoU Course Project</span>
+                        <h3 class="card-title">Interactive Productivity Dashboard</h3>
+                        <p class="card-desc">Mengembangkan website dashboard interaktif berbasis HTML, CSS, dan JavaScript yang dilengkapi fitur focus timer, to-do list, quick links, serta dark mode untuk mendukung produktivitas pengguna sebagai implementasi pembelajaran pengembangan web frontend dari course online.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span><span>CSS</span><span>Javascript</span>
+                        </div>
+                        <div class="button-group">
+    <a href="https://github.com/valeriealanaa/CodingCamp-20Apr26-valeriealana.git" class="btn btn-outline btn-small">
+        <i class="fa-brands fa-github"></i> View Source
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1NkpSbEScsBc7FFyd9IDtxOVEdl5g8MIL?usp=drive_link" target="_blank" class="btn btn-outline btn-small">
+        <i class="fa-brands fa-google-drive"></i> Project Preview
+    </a>
+</div>
+
+            </div>
+        </div>
+                 </div>
+                </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-certificate"></i> Courses & Learning</h2>
+            
+            <div class="grid">
+                <div class="card mini-card">
+                    <h4>Belajar Dasar Pemrograman Web</h4> 
+                    <p><em>Ongoing Course</em></p>
+                    <p>Dicoding Indonesia</p>
+                </div>
+                
+                <div class="card mini-card">
+                    <h4>Software Engineering Coding Camp</h4>
+                    <p>RevoU</p>
+                    <a href="https://drive.google.com/file/d/1nw26HeX6ODilIf18r0CrQOTvFaVfVl9a/view" target="_blank" class="btn-link">View Credential <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="organization" class="experience" style="padding-top: 20px;">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-users"></i> Organization Experience</h2>
+            
+            <div class="grid">
+                <div class="card mini-card">
+                    <h4>UKM Gradien</h4>
+                    <p>(Gerakan Digital Ekosistem Nusantara)</p>
+                    <p style="margin-top: 15px;"><strong>Vice Chairman</strong></p> 
+                    <p>December 2025 - Now</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+    <div class="container">
+
+        <h2 class="section-title">Contact Me</h2> <br>
+
+        <input
+            type="text"
+            id="nama"
+            placeholder="Masukkan pesan">
+
+        <button id="btn-kirim">
+            Send
+        </button>
+
+        <p id="pesan"></p>
+
+    </div>
+</section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Valerie Alana Yusri</p>
+        </div>
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>
